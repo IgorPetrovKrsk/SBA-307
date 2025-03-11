@@ -82,6 +82,7 @@ h3 {
     display: flex;
     padding: 0px;
     width: 15%;
+    height: 84vh;
 }
 #navigation li{
     transition-property: background-color;
@@ -200,3 +201,67 @@ p {
     margin: 5px;
 }
 
+/* Styles for signIn.html */
+
+#divRegister{
+    position: relative;
+    /* need to make divRegister position: relative; 
+    so that imgRegisterShowPassword whould anchor to divRegister rather then body*/
+    flex-direction: column;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    justify-self: center;
+    width: 50%;
+    background-image: linear-gradient(#1D2D44,#0D1321);
+    border-radius: 7px;
+    padding: 20px 40px;
+    
+}
+
+.inputEmail{
+    width: 100%;
+}
+.inputPassword{    
+    width: 100%;
+}
+#imgRegisterShowPassword{
+    position: absolute;
+    right: 34px;
+    top: 135px;
+}
+#imgRegisterShowPassword2{
+    position: absolute;
+    right: 34px;
+    top: 182px;
+}
+#inRegister{
+    display: block;
+    width: 40%;
+    margin: auto;
+    background-color: light-dark(#F0EBD8, #361d44);
+    color: light-dark(#0D1321, #748CAB);
+}
+
+#divBack{
+    display: block;
+    width: 20%;
+    background-color: light-dark(#F0EBD8, #1D2D44);   
+    
+}
+#divBack2{
+    display: flblockex;
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;    
+    color: light-dark(#0D1321, #80464b); 
+}
+
+/* Styles for singInSuccess.html*/
+
+#bigHomeButton{
+    font-size: xx-large;
+    width: 30%;
+    background-color: light-dark(#F0EBD8, #1D2D44);
+    color: light-dark(#0D1321, #748CAB);
+    
+}
