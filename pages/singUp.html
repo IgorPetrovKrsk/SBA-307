@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>Register</title>
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <style>
@@ -34,11 +34,11 @@
         </div>
         </a>
     </div>
-    
     <br>
-
-    <div id="divRegister">
-
+    
+    <form id="formRegister">
+        <a href="../pages/login.html" id="aLogin">Already have an account? Login</a>
+        <br>
         <h1>Register</h1>
         <h3>Email</h3>
         <input class="inputEmail" type="email" name="email" id="email" placeholder="Email">
@@ -48,10 +48,24 @@
         <h3>Confirm password</h3>
         <input class="inputPassword" type="password" name="password" id="password" placeholder="Password">
         <img id="imgRegisterShowPassword2" src="../images/show.png" alt="Show password" width="20px">
+        <h3>Your favorite genre</h3>
+        <select name="favoriteGenre" id="selectFavoriteGenre">
+            <option value="" selected disabled hidden>Choose your favorite genre</option>
+            <option value="action">Action</option>
+            <option value="adventure">Adventure</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+            <option value="horror">Horror</option>
+            <option value="science">Science Fiction</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="thriller">Thriller</option>
+            <option value="romance">Romance</option>
+            <option value="animation">Animation</option>
+        </select>
         <br>
         <br>
-        <a href="../pages/singInSuccess.html"><input id="inRegister" type="submit" value="Sing Up"></a>
-    </div>
+        <a href="../pages/singInSuccess.html" id="aSignUp">Sing up</a>
+    </form>
 
 </body>
 

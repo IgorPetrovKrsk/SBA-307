@@ -13,7 +13,7 @@ body {
     color: light-dark(#0D1321, #748CAB);
 }
 
-#searchSignIn {
+#searchSignUp {
     justify-content: flex-end;
     display: flex;
     width: 100%;
@@ -57,7 +57,7 @@ h3 {
     margin-right: -40px;
 }
 
-#btnSignIn {
+#btnSignUp {
     border: 0px;
     height: 2rem;
     margin: 4px 8px;
@@ -201,9 +201,9 @@ p {
     margin: 5px;
 }
 
-/* Styles for signIn.html */
+/* Styles for signUp.html */
 
-#divRegister{
+#formRegister{
     position: relative;
     /* need to make divRegister position: relative; 
     so that imgRegisterShowPassword whould anchor to divRegister rather then body*/
@@ -214,7 +214,14 @@ p {
     background-image: linear-gradient(#1D2D44,#0D1321);
     border-radius: 7px;
     padding: 20px 40px;
-    
+}
+#formRegister h1{
+    text-align: center;
+}
+#aLogin{
+    display: block;
+    text-align: center;
+    text-decoration: underline;    
 }
 
 .inputEmail{
@@ -226,19 +233,22 @@ p {
 #imgRegisterShowPassword{
     position: absolute;
     right: 34px;
-    top: 135px;
+    top: 179px;
 }
 #imgRegisterShowPassword2{
     position: absolute;
     right: 34px;
-    top: 182px;
+    top: 226px;
 }
-#inRegister{
+#aSignUp{
+    border: 2px solid light-dark(#0D1321, #748CAB);
     display: block;
+    text-align: center;
+    font-size: x-large;
     width: 40%;
     margin: auto;
     background-color: light-dark(#F0EBD8, #361d44);
-    color: light-dark(#0D1321, #748CAB);
+    color: light-dark(#0D1321, #748CAB);    
 }
 
 #divBack{
@@ -254,6 +264,43 @@ p {
     padding-top: 5px;
     padding-bottom: 5px;    
     color: light-dark(#0D1321, #80464b); 
+}
+
+#selectFavoriteGenre{
+    width: 50%;    
+}
+
+/* styles for login.html */
+
+#formLogin{
+    position: relative;
+    flex-direction: column;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    justify-self: center;
+    width: 50%;
+    background-image: linear-gradient(#1D2D44,#0D1321);
+    border-radius: 7px;
+    padding: 20px 40px;
+}
+#formLogin h1{
+    text-align: center;
+}
+#labelStayLogged{
+    font-size: large;
+}
+
+#imgLoginShowPassword{
+    position: absolute;
+    top: 135px;
+    right: 37px;
+
+}
+#aDontHaveAnAccount{
+    text-decoration: underline;
+}
+
+.imgLoginLogo{
+    margin-right: 40px;
 }
 
 /* Styles for singInSuccess.html*/
