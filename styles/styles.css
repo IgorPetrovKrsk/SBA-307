@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     color-scheme: light dark;
 }
+
+.roboto-cinemaLink {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
 
 header {
     background-color: light-dark(#748CAB, #1D2D44);
@@ -11,6 +21,10 @@ header {
 body {
     background-color: light-dark(#F0EBD8, #0D1321);
     color: light-dark(#F0EBD8, #748CAB);
+    font: 1em roboto-cinemaLink;
+}
+a:-webkit-any-link {
+    text-decoration: none;
 }
 
 #searchSignUp {
@@ -49,8 +63,10 @@ h3 {
 #inSearch {
     height: 2rem;
     margin: 4px;
-    width: 70%;
+    width: 90%;
     padding-right: 30px;
+    background-color: light-dark(#f0ebd8,#3b3b3b);
+    border: 0px;
 }
 #inSearchIcon{
     position: relative;
@@ -66,7 +82,7 @@ h3 {
     border: 0px;
     height: 2rem;
     margin: 4px 8px;
-    width: 10em;
+    width: 5em;
     background-color: #3E5C76;
     color: light-dark(#F0EBD8,#748CAB);    
 }
