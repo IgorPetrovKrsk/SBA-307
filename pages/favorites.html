@@ -4,7 +4,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>CinemaLink</title>
+   <title>CinemaLink Favorites</title>
    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <style>
@@ -19,13 +19,16 @@
 
 <body>
    <header>
-      <img id="cinemaLinkLogo" src="/images/Cinemalink_cropper.webp" alt="Cinemalink logo">
+      <a href="../pages/index.html"><img id="cinemaLinkLogo" src="/images/Cinemalink_cropper.webp"
+            alt="Cinemalink logo"></a>
       <div style="width: 100%;">
          <div id="cinemaLinkTextSearch">
             <h1>CinemaLink</h1>
             <div id="searchSignUp">
-               <input id="inSearch" type="search" placeholder="Search for movies">
-               <img id="inSearchIcon" src="../images/Search movie white.png" alt="Search icon">
+               <form class="formSearch">
+                  <input id="inSearch" type="search" placeholder="Search for movies">
+                  <img id="inSearchIcon" src="../images/Search movie white.png" alt="Search icon">
+               </form>
                <a href="../pages/login.html"><button id="btnSignUp">Login</button></a>
             </div>
          </div>
@@ -54,14 +57,58 @@
             </a>
             <a href="">
                <li class="linkDisabled">News</li>
-            </a>            
+            </a>
          </ul>
-      </nav>      
-      <section id="divUnderConstraction">
-        <h1>FAVORITES</h1>        
+      </nav>
+      <section id="divFavorites">
+         <h1>FAVORITES</h1>
+         <table id="tableFavorites">
+            <tr>
+               <td class="positionRelative">  <!-- Not sure if position relative will work on td outside chrome -->
+                  <img class="imgFilmPoster" src="../images/Film poster 1.png" alt="Favorite film 1 poster">
+                  <p class="pFilmTitle">Film 1 Title</p>
+                  <p class="pFilmDescription">Film 1 short description</p>
+               </td>
+               <td class="positionRelative">
+                  <img class="imgFilmPoster" src="../images/Film poster 2.png" alt="Favorite film 2 poster">
+                  <p class="pFilmTitle">Film 2 Title</p>
+                  <p class="pFilmDescription">Film 2 short description</p>
+               </td>
+
+               <td class="positionRelative">
+                  <img class="imgFilmPoster" src="../images/Film poster 3.png" alt="Favorite film 3 poster">
+                  <p class="pFilmTitle">Film 3 Title</p>
+                  <p class="pFilmDescription">Film 3 short description</p>
+               </td>
+            </tr>
+            <tr>
+               <td class="positionRelative">
+                  <img class="imgFilmPoster" src="../images/Film poster 4.png" alt="Favorite film 4 poster">
+                  <p class="pFilmTitle">Film 4 Title</p>
+                  <p class="pFilmDescription">Film 4 short description</p>
+               </td>
+               <td class="positionRelative">
+                  <img class="imgFilmPoster" src="../images/Film poster 5.png" alt="Favorite film 5 poster">
+                  <p class="pFilmTitle">Film 5 Title</p>
+                  <p class="pFilmDescription">Film 5 short description</p>
+               </td>
+               <td class="positionRelative">
+                  <img class="imgFilmPoster" src="../images/Film poster 6.png" alt="Favorite film 6 poster">
+                  <p class="pFilmTitle">Film 6 Title</p>
+                  <p class="pFilmDescription">Film 6 short description</p>
+               </td>
+            </tr>
+            <tr>
+               <td class="positionRelative">
+                  <img class="imgFilmPoster" src="../images/Film poster 7.png" alt="Favorite film 7 poster">
+                  <p class="pFilmTitle">Film 7 Title</p>
+                  <p class="pFilmDescription">Film 7 short description</p>
+               </td>
+            </tr>
+         </table>
       </section>
    </div>
-   
+
    <footer>
       <ul id="footerUl">
          <a href="https://www.netflix.com/">

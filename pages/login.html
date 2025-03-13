@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>CinemaLink Login</title>
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <style>
@@ -19,7 +19,7 @@
 
 <body>
     <header>
-        <img id="cinemaLinkLogo" src="/images/Cinemalink_cropper.webp" alt="Cinemalink logo">
+        <a href="../pages/index.html"><img id="cinemaLinkLogo" src="/images/Cinemalink_cropper.webp" alt="Cinemalink logo"></a>
         <div style="width: 100%;">
             <h1 style="text-align: start; padding-top: 17px;">CinemaLink</h1>
             <h3 id="textSlogan">Find Movies. Watch Anywhere. Enjoy Anytime!</h3>
@@ -36,7 +36,7 @@
     </div>
     <br>
 
-    <form id="formLogin">
+    <form id="formLogin" action="../pages/singInSuccess.html">
         <h1>Login</h1>
         <h3>Email</h3>
         <input class="inputEmail" type="email" name="email" id="email" placeholder="Email">
@@ -50,7 +50,7 @@
         </label>
         <br>
         <br>
-        <a href="../pages/singInSuccess.html" id="aSignUp">Login</a>
+        <input type="submit" id="inSignUp" value="Login">
         <br>
         <a href="../pages/singUp.html" id="aDontHaveAnAccount">Don't have an account? Sign up.</a>
         <p>Or login with</p>

@@ -3,19 +3,24 @@
 }
 
 header {
-    background-color: light-dark(#F0EBD8, #1D2D44);
+    background-color: light-dark(#748CAB, #1D2D44);
     display: flex;
     padding: 0px;
 }
 
 body {
     background-color: light-dark(#F0EBD8, #0D1321);
-    color: light-dark(#0D1321, #748CAB);
+    color: light-dark(#F0EBD8, #748CAB);
 }
 
 #searchSignUp {
     justify-content: flex-end;
     display: flex;
+    width: 100%;
+}
+.formSearch{
+    display: flex ;
+    justify-content: flex-end;
     width: 100%;
 }
 
@@ -62,7 +67,8 @@ h3 {
     height: 2rem;
     margin: 4px 8px;
     width: 10em;
-    background-color: #3E5C76;    
+    background-color: #3E5C76;
+    color: light-dark(#F0EBD8,#748CAB);    
 }
 
 #textCinemaLink {
@@ -78,11 +84,13 @@ h3 {
 }
 
 #navigation {
-    background-color: light-dark(#F0EBD8, #1D2D44);
+    position: sticky; 
+    top: 10px;
+    background-color: light-dark(#748CAB, #1D2D44);
     display: flex;
     padding: 0px;
     width: 15%;
-    height: 84vh;
+    height: max-content;
 }
 #navigation li{
     transition-property: background-color;
@@ -118,7 +126,7 @@ a {
 
 #videoBanner {
     justify-content: center;
-    background-color: light-dark(#F0EBD8, #1D2D44);
+    background-color: light-dark(#748CAB, #1D2D44);
     margin-left: 10px;
     display: flex;
     height: 400px;
@@ -131,7 +139,7 @@ a {
 
 
 #newRelises {
-    background-color: light-dark(#F0EBD8, #1D2D44);
+    background-color: light-dark(#748CAB, #1D2D44);
     margin: 10px 10px;
     display: flex;
     height: 300px;
@@ -139,7 +147,7 @@ a {
 }
 
 #news {
-    background-color: light-dark(#F0EBD8, #1D2D44);
+    background-color: light-dark(#748CAB, #1D2D44);
     margin: 10px 10px;
     display: flex;
     height: 300px;
@@ -155,7 +163,7 @@ a {
     flex-direction: column;
     align-items: center;
     display: flex;
-    color: white;
+    color: light-dark(#F0EBD8, #748CAB);
     margin: 0px;
 }
 
@@ -167,7 +175,7 @@ a {
 #footerUl {
     position: fixed;
     width: 96%;
-    background-color: light-dark(#F0EBD8, #361d44);
+    background-color: light-dark(#8b68a0, #361d44);
     display: flex;
     bottom: 0px;    
 }
@@ -182,16 +190,8 @@ a {
 
 }
 
-#divUnderConstraction{
-    margin-left: 10px;
-    width: 84%;
-    display: block;
-    text-align: center;    
-
-}
-
 .linkDisabled{
-    color: gray;
+    color: light-dark(rgb(82, 82, 82),gray);
     text-decoration: line-through;
     font-style: italic;    
 }
@@ -208,10 +208,11 @@ p {
     /* need to make divRegister position: relative; 
     so that imgRegisterShowPassword whould anchor to divRegister rather then body*/
     flex-direction: column;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px light-dark(rgba(0,0,0,0.25),rgba(0,0,0,0.75));
     justify-self: center;
     width: 50%;
-    background-image: linear-gradient(#1D2D44,#0D1321);
+    /* background-image: linear-gradient(#1D2D44,#0D1321); */
+    background-image: linear-gradient(light-dark(#c7ddfa,#1D2D44),light-dark(#748CAB,#0D1321));
     border-radius: 7px;
     padding: 20px 40px;
 }
@@ -240,7 +241,7 @@ p {
     right: 34px;
     top: 226px;
 }
-#aSignUp{
+#inSignUp{
     border: 2px solid light-dark(#0D1321, #748CAB);
     display: block;
     text-align: center;
@@ -251,23 +252,19 @@ p {
     color: light-dark(#0D1321, #748CAB);    
 }
 
-#divBack{
-    display: block;
-    width: 20%;
-    background-color: light-dark(#F0EBD8, #1D2D44);   
-    
-}
-#divBack2{
-    display: flblockex;
-    width: 100%;
-    height: 100%;
-    padding-top: 5px;
-    padding-bottom: 5px;    
-    color: light-dark(#0D1321, #80464b); 
-}
 
 #selectFavoriteGenre{
     width: 50%;    
+}
+
+
+/* styles for movies.html */
+
+#divUnderConstraction{
+    width: 85%;
+    display: block;
+    text-align: center;    
+
 }
 
 /* styles for login.html */
@@ -275,10 +272,11 @@ p {
 #formLogin{
     position: relative;
     flex-direction: column;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px light-dark(rgba(0,0,0,0.25),rgba(0,0,0,0.75));
     justify-self: center;
     width: 50%;
-    background-image: linear-gradient(#1D2D44,#0D1321);
+    background-image: linear-gradient(light-dark(#c7ddfa,#1D2D44),light-dark(#748CAB,#0D1321));
+    
     border-radius: 7px;
     padding: 20px 40px;
 }
@@ -303,12 +301,77 @@ p {
     margin-right: 40px;
 }
 
+#divBack{
+    display: block;
+    width: 20%;
+    background-color: light-dark(#748CAB, #1D2D44);   
+    
+}
+#divBack2{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;    
+    color: light-dark(#0D1321, #80464b); 
+}
+
 /* Styles for singInSuccess.html*/
 
 #bigHomeButton{
     font-size: xx-large;
     width: 30%;
-    background-color: light-dark(#F0EBD8, #1D2D44);
+    background-color: light-dark(#748CAB, #1D2D44);
     color: light-dark(#0D1321, #748CAB);
     
 }
+
+/* styles for favorites.html */
+
+#divFavorites{
+    width: 85%;
+    text-align: center;    
+}
+
+ #tableFavorites{
+    margin: 0;
+    padding: 0;
+} 
+
+.imgFilmPoster{
+    width: 100%;
+    
+}
+.positionRelative{
+    position: relative; /* This is needed to film title and film description to be position:absolute */
+    /* May not work outside chrome */
+    padding: 10px;
+
+}
+.pFilmTitle{
+    position: absolute;
+    /* next 4 lines centers position absolute element */
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+     
+    color: #F0EBD8;
+    bottom: 15%;
+    font-size: x-large;
+    text-shadow: 0px 0px 5px black;
+}
+.pFilmDescription{
+    position: absolute;
+    /* next 4 lines centers position absolute element */
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    color: #F0EBD8;
+    font-size: large;
+    text-shadow: 0px 0px 5px black;
+    
+}
+
