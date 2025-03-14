@@ -5,11 +5,12 @@ Adjusted for light and dark themes.
 
 Dark theme.
 
-![image](https://github.com/user-attachments/assets/f85456d8-83a5-49fb-8582-e133b8148968)
+![image](https://github.com/user-attachments/assets/47288cd2-c8e0-47b4-8d87-85a4318cad7a)
+
 
 Light theme.
 
-![image](https://github.com/user-attachments/assets/d69853e2-7a79-4c37-80fe-d6f2f797da79)
+![image](https://github.com/user-attachments/assets/ce99f6e9-28e5-4ca5-ab91-0bb74a1c4b02)
 
 
 What could you have done differently during the planning stages of your project to make the execution easier?
